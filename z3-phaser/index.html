@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z3 + Phaser Pathfinder</title>
+    <!-- Z3 WASM bundle must be loaded before the module so initZ3 is on globalThis -->
+    <script src="/z3-built.js"></script>
+    <script>
+      globalThis.global = { initZ3: globalThis.initZ3 };
+    </script>
+  </head>
+  <body>
+    <!-- Phaser game canvas will be inserted here -->
+    <div id="phaser-game"></div>
+
+    <!-- Z3 results panel -->
+    <div id="z3-panel">
+      <h2>Z3 Solver</h2>
+      <pre id="z3-output">Initializing Z3…</pre>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

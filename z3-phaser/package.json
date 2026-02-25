@@ -1,0 +1,19 @@
+{
+  "name": "z3-phaser",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "z3-solver": "^4.13.3",
+    "phaser": "^3.80.0",
+    "easystarjs": "^0.4.4"
+  }
+}
